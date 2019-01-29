@@ -43,7 +43,7 @@ public class TokenFilter extends ZuulFilter{
             ctx.setSendZuulResponse(false);
             ctx.setResponseStatusCode(401);
             ctx.setResponseBody("ACCESSTOKEN IS NULL! PLEASE LOGIN ON");
-//            return null;
+            return null;
         }
 //    }
         return null;

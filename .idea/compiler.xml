@@ -10,6 +10,9 @@
         <module name="springcloud-2.0-api-member-service-impl" />
         <module name="springcloud-2.0-api-order-service" />
         <module name="springcloud-2.0-api-order-service-impl" />
+        <module name="springcloud-2.0-api-pay-service" />
+        <module name="springcloud-2.0-api-pay-service-impl" />
+        <module name="springcloud-2.0-config-server" />
         <module name="springcloud-2.0-eureka-server" />
         <module name="springcloud-2.0-itmayiedu-common" />
         <module name="springcloud-2.0-zuul-server" />
@@ -20,6 +23,8 @@
       <module name="springcloud-2.0-api-member-service-impl" target="1.8" />
       <module name="springcloud-2.0-api-order-service" target="1.8" />
       <module name="springcloud-2.0-api-order-service-impl" target="1.8" />
+      <module name="springcloud-2.0-api-pay-service" target="1.8" />
+      <module name="springcloud-2.0-api-pay-service-impl" target="1.8" />
       <module name="springcloud-2.0-api-service" target="1.8" />
       <module name="springcloud-2.0-config-server" target="1.8" />
       <module name="springcloud-2.0-eureka-server" target="1.8" />

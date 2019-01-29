@@ -1,0 +1,22 @@
+###服务注册到eureka地址
+eureka:
+  client:
+    service-url:
+           defaultZone: http://localhost:8100/eureka
+spring:
+  application:
+    ####注册中心本应用名称
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          ###git环境地址
+          uri: https://gitee.com/wx_public/cloud_itmayi_config.git
+          ####搜索目录
+          search-paths: zuulconfig
+      ####读取哪个分支
+      label: master
+####端口号
+server:
+  port: 8888

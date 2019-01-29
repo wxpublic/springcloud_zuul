@@ -44,6 +44,7 @@
         <option value="$PROJECT_DIR$/springcloud-2.0-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-2.0-zuul-server/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-2.0-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-2.0-config-server/pom.xml" />
       </list>
     </option>
   </component>
@@ -128,7 +129,4 @@
     </entry>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
-  <component name="SvnConfiguration">
-    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
-  </component>
 </project>

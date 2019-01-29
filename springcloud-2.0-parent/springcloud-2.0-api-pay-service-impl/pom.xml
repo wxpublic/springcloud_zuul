@@ -9,19 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-2.0-api-order-service-impl</artifactId>
+    <artifactId>springcloud-2.0-api-pay-service-impl</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.itmayiedu</groupId>
-            <artifactId>springcloud-2.0-api-order-service</artifactId>
-            <version>${parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.itmayiedu</groupId>
-            <artifactId>springcloud-2.0-api-member-service</artifactId>
+            <artifactId>springcloud-2.0-api-pay-service</artifactId>
             <version>${parent.version}</version>
         </dependency>
     </dependencies>
-
 </project>

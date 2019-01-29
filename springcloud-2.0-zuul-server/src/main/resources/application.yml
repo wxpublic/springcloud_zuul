@@ -9,18 +9,19 @@ server:
 spring:
   application:
     name: service-zuul
-### 配置网关反向代理
-zuul:
-  routes:
-    # 定义转发服务规则，自定义节点api-a
-    api-a:
-     ### 当客户端发送请求http://zuulIP:80/api-member/开头的 都会转发到会员服务
-      path: /api-member/**
-      # 会员服务别名（spring.application.name） zuul网关默认整合ribbon,自动实现负载均衡轮询效果。
-      serviceId: app-itmayiedu-member
-    # 定义转发服务规则，自定义节点api-b
-    api-b:
-        ### 当客户端发送请求http://zuulIP:80/api-order/开头的 都会转发到订单服务
-      path: /api-order/**
-      # 订单服务别名（spring.application.name） zuul网关默认整合ribbon,自动实现负载均衡轮询效果。
-      serviceId: app-itmayiedu-order
+  cloud:
+    config:
+    ####读取环境后缀
+      profile: dev
+      ####读取config-server注册地址
+      discovery:
+      #服务配置中心config server端别名
+        service-id: config-server
+        #开启读取权限
+        enabled: true
+# 开启所有监控中心接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
